@@ -144,7 +144,6 @@
     background-image: url('../image_folder/Desktop/banner.jpeg');
     min-height: 600px;
     margin-top: 108px;
-    border-top: 1px solid #333;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -178,7 +177,7 @@
 }
 .section1-main{
     position: relative;
-    bottom: -290px;
+    bottom: -240px;
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
@@ -248,6 +247,7 @@
 .section-2 .about_us_text{
     font-size: 20px;
     font-family: ProximaNovaRegular;
+    padding-bottom: 10px;
 }
 
  /*Section-2*/

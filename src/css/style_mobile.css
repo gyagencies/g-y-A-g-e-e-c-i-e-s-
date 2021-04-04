@@ -44,14 +44,14 @@
     }
     .section1-main {
         position: relative;
-        bottom: -30px !important;
+        bottom: -145px !important;
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
     .section1-main .col-sm-4 {
         padding: 0 !important;
         height: 125px !important;
-        background-color: #F21F35;
+        background-color: #005776;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,7 +152,7 @@
         font-family: proximaNovaBold;
         font-style: italic;
     }
-    .section-6{ 
+    .section-6{
         /* display: none !important; */
     }
     .section-3 {
@@ -200,7 +200,7 @@
         color: #fff;
         height: 320px;
         align-items: initial !important;
-        padding-left: 20px !important; 
+        padding-left: 20px !important;
     }
     .mt-5 .afs-button{
         background-color: #FFFFFF;
@@ -226,7 +226,7 @@
     .section-3 #mini-refs .img img{
         width: 55px !important;
         height: 55px !important;
-        
+
     }
     .section-3 #mini-refs .img{
         line-height: 0.7;
@@ -316,7 +316,7 @@
         padding-top: 20px;
     }
     .section-7 .heading{
-        padding-bottom: 0px !important;     
+        padding-bottom: 0px !important;
     }
     .accordion {
         background-color: white;
@@ -356,10 +356,10 @@
 
     /* Track */
     .over-flow::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px white; 
+      box-shadow: inset 0 0 5px white;
       border-radius: 8px;
     }
-     
+
     /* Handle */
     .over-flow::-webkit-scrollbar-thumb {
       background: #CBCBCB;
@@ -368,7 +368,7 @@
 
     /* Handle on hover */
     .over-flow::-webkit-scrollbar-thumb:hover {
-      background: #CBCBCB; 
+      background: #CBCBCB;
     }
     .section-6 .afs-button {
         border: 1px solid #E50028;
