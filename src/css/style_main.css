@@ -70,7 +70,7 @@
 
 .afs-button{
     color: #FFFFFF;
-    background: #E50028;
+    background: #005776;
     font-size: 16px;
     padding: 12px 22px;
     font-family: ProximaNovaSemibold;
@@ -141,16 +141,18 @@
 /* Section-1 */
 
 .section1{
-    background: #000;
+    background-image: url('../image_folder/Desktop/banner.jpeg');
     min-height: 600px;
     margin-top: 108px;
     border-top: 1px solid #333;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .section1 .line1{
     padding-top: 152px;
     font-size: 36px;
-    color: #FFFFFF;
+    color: #000000;
     font-family: ProximaNovaLight;
 }
 
@@ -168,7 +170,7 @@
     display: inline-block;
 }
 .section1 #learn_more_btn{
-    color: #FFFFFF;
+    color: #005776;
     font-size: 16px;
     margin: 50px 0 80px;
     cursor: pointer;
@@ -176,7 +178,7 @@
 }
 .section1-main{
     position: relative;
-    bottom: -65px;
+    bottom: -290px;
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
@@ -244,12 +246,8 @@
 }
 
 .section-2 .about_us_text{
-    font-size: 16px;
+    font-size: 20px;
     font-family: ProximaNovaRegular;
-}
-.section-2 .learn-more{
-    position: absolute;
-    bottom: 0px;
 }
 
  /*Section-2*/
@@ -261,6 +259,14 @@
 .section-3{
     padding: 80px 0 100px;
     position: relative;
+}
+.section-3 #services{
+	display: flex;
+justify-content: space-around;
+}
+.section-3 #services ul li {
+	font-family: ProximaNovaRegular;
+	font-size: 20px;
 }
 
 .section-3 .heading{
@@ -524,7 +530,7 @@ Modal*/
 
 .modal-dialog .modal-body .part1{
     width: 40%;
-    background: #000000;
+    background: #005776;
     padding: 50px 50px 40px 80px;
 }
 .modal-dialog .modal-body .part1 button{
@@ -572,12 +578,12 @@ Modal*/
 }
 
 .side-3 .socialIcons span{
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     background-size: 100%;
     display: inline-block;
     position: relative;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 .side-3 .socialIcons .fb{
     background-image: url("../image_folder/Desktop/logos/458488_facebook-transparent-png.png");
@@ -659,7 +665,7 @@ Modal*/
     width: 100%;
     height: 55px;
     border: none;
-    background: #D93447;
+    background: #005776;
     color: #fff;
     cursor: pointer;
 }
@@ -691,7 +697,7 @@ li:hover{
     padding:50px 25px;
 }
 #about-us-more h2{
-    color:#D93447;
+    color:#005776;
     font-family:proximaNovaBold;
 }
 #about-us-more h3{
@@ -715,7 +721,7 @@ li:hover{
 #chat-btns {
     position: fixed;
     z-index: 999;
-    right: 85px;
+    right: 30px;
     bottom: 20px;
     z-index: 10;
 }
