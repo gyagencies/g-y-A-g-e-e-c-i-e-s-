@@ -165,7 +165,7 @@
     height: 48px;
     padding-left: 25px;
     line-height: 75px;
-    border-left: 2px solid #D93447;
+    border-left: 2px solid #005776;
     display: inline-block;
 }
 .section1 #learn_more_btn{
@@ -737,3 +737,30 @@ li:hover{
 .Home_Logo {
     width: 100%;
 }
+
+/*footer*/
+.footer {
+	background-color: #005776;
+}
+
+.gy-footer {
+	padding: 20px 0px;
+	color: #fff;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #999;
+}
+
+.sub-footer-list a {
+	color: #fff;
+    font-size: 14px;
+}
+
+.sub-footer-list a:hover {
+	color: #999;
+}
+
+
+
