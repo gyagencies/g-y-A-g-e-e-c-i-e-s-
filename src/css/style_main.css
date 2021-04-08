@@ -761,6 +761,60 @@ li:hover{
 .sub-footer-list a:hover {
 	color: #999;
 }
+.property-tiles {
+	display: flex;
+	justify-content: space-between;
+}
+.property-tile {
+	position: relative;
+	cursor: pointer;
+}
+
+.property-tile img {
+	width: 320px;
+	border: 1px solid #ddd;
+}
+.property-tile-title {
+	position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #005776;
+  padding: 5px;
+  font-size: 12px;
+  opacity: 0.8;
+  color: #fff;
+  border-radius: 2px;
+  font-family: ProximaNovaRegular;
+}
+.property-view-more {
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.view-more-btn {
+	background-color: #005776;
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: ProximaNovaRegular;
+}
+.view-more-btn:hover {
+	color: #fff;
+}
+
+.property-tile:hover .tile-img{ 
+	opacity: 0.8;
+}
+
+.property-tile:hover .property-view-more {
+	opacity: 1;
+}
 
 
 
