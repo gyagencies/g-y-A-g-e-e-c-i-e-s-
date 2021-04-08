@@ -1,0 +1,17 @@
+{
+  "plots": {
+    "title": "Open Plots",
+    "image": "",
+    "data": []
+  },
+  "individualHouses": {
+    "title": "Individual Houses",
+    "image": "",
+    "data": []
+  },
+  "apartmentHouses": {
+    "title": "Apartment Houses",
+    "image": "",
+    "data": []
+  }
+}
