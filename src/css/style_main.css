@@ -766,25 +766,29 @@ li:hover{
 	justify-content: space-between;
 }
 .property-tile {
+    width: 300px;
+    height: 200px;
 	position: relative;
 	cursor: pointer;
 }
+.property-tile:hover img{
+    transform: scale(1.1);
+}
 
 .property-tile img {
-	width: 320px;
+	width: 100%;
+    height: 100%;
 	border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: 0.5s all ease-in-out;
 }
 .property-tile-title {
-	position: absolute;
-  top: 5px;
-  left: 5px;
-  background: #005776;
-  padding: 5px;
-  font-size: 12px;
-  opacity: 0.8;
-  color: #fff;
-  border-radius: 2px;
-  font-family: ProximaNovaRegular;
+    padding: 5px;
+    font-size: 24px;
+    color: #333;
+    border-radius: 2px;
+    font-family: ProximaNovaRegular;
+    text-align: center;
 }
 .property-view-more {
 	transition: .5s ease;
@@ -808,7 +812,7 @@ li:hover{
 	color: #fff;
 }
 
-.property-tile:hover .tile-img{ 
+.property-tile:hover .tile-img{
 	opacity: 0.8;
 }
 
