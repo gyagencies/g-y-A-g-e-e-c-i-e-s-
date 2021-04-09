@@ -8,8 +8,12 @@ class Header extends Component {
     constructor(props){
         super(props);
         this.state={
-            openContactModel: false
+            openContactModel: false,
+            showMobileNavbar: false
         }
+    }
+    triggerNavbar(){
+        this.setState({showMobileNavbar: !this.state.showMobileNavbar});
     }
     triggerContactModel() {
         this.setState({ openContactModel: !this.state.openContactModel})
@@ -51,8 +55,7 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-6 logo-section">
-                                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#collapsibleNavbar">
+                                <button className="navbar-toggler" type="button" onClick={this.triggerNavbar.bind(this)}>
                                     <img src={HamburgerIcon} />
                                 </button>
                                 &nbsp;&nbsp;
@@ -60,35 +63,26 @@ class Header extends Component {
                             <div className="col-6 justify-content-end"
                                  style={{paddingTop: '15px', textAlign: 'right'}}>
                                 <ul>
-                                    <li style={{paddingTop: '5px', paddingRight: '10px'}}>
-                                        <a className="nav-link contact-cta Contact_Us" onClick={this.triggerContactModel.bind(this)} style={{color: 'white'}}>
-                                            CONTACT US
-                                        </a>
+                                    <li className="nav-item">
+                                        <a className="nav-link contact-cta Contact_Us" onClick={this.triggerContactModel.bind(this)}
+                                           data-toggle="modal" data-target="#myModal"
+                                           style={{color: 'white !important'}}>CONTACT US</a>
+                                        <ContactModel show={this.state.openContactModel} closeContactModel={this.triggerContactModel.bind(this)}/>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="row collapse navbar-collapse" id="collapsibleNavbar"
-                             style={{backgroundColor: '#000'}}>
-                            <ul className="navbar-nav">
-                                <li className="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                    <a className="nav-link home_link active-item" data-id="#logo-header"
-                                       href="javascript:void(0)">HOME</a>
-                                </li>
-                                <li className="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                    <a className="nav-link aboutus_header" data-id="#section-2"
-                                       href="javascript:void(0)">ABOUT US</a>
-                                </li>
-                                <li className="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                    <a className="nav-link feature_header" data-id="#section-3"
-                                       href="javascript:void(0)">OUR SERVICES</a>
-                                </li>
-                                <li className="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                    <a className="nav-link service_header" data-id="#section-5"
-                                       href="properties.html">PROPERTIES</a>
-                                </li>
-                            </ul>
-                        </div>
+                        {this.state.showMobileNavbar ? (
+                            <div className="row  navbar-collapse" id="collapsibleNavbar"
+                                 style={{backgroundColor: '#000'}}>
+                                <ul className="navbar-nav">
+                                    <NavigationItem link='/'>HOME</NavigationItem>
+                                    <NavigationItem link='/'>ABOUT US</NavigationItem>
+                                    <NavigationItem link='/'>OUR SERVICES</NavigationItem>
+                                    <NavigationItem link='/properties'>PROPERTIES</NavigationItem>
+                                </ul>
+                            </div>
+                        ) : null}
                     </div>
                 </div>
             </div>

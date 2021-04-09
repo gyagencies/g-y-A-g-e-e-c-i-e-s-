@@ -93,6 +93,10 @@
     }
     .header-mobile ul li{
         list-style-type: none;
+
+    }
+    .header-mobile .navbar-nav li {
+        padding: 10px 0;
     }
     .navbar-nav {
         padding-left: 26px !important;
