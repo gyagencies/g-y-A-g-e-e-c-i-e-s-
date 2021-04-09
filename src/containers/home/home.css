@@ -1,0 +1,26 @@
+#contact-section .icon {
+    display: flex;
+    justify-content: center;
+}
+.email_icon, .phone_icon, .support_icon {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+.email_icon{
+    background-image: url("../../image_folder/Desktop/email.svg");
+}
+.phone_icon{
+    background-image: url("../../image_folder/Desktop/phone-call.svg");
+}
+.support_icon{
+    background-image: url("../../image_folder/Desktop/Support.svg");
+}
+
+.about_image{
+    background-image: url("../../image_folder/Desktop/about.jpeg");
+    width: 450px;
+    height: 300px;
+    background-size: 100%;
+}

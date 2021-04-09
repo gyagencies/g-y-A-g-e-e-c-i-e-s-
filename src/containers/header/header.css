@@ -1,0 +1,10 @@
+.home_logo{
+    background-image: url("../../image_folder/Desktop/logos/logo.png");
+    width: 200px;
+    height: 85px;
+}
+.NavigationItem{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
