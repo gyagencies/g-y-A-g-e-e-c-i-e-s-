@@ -637,7 +637,10 @@ Modal*/
   color: #000000;
 }
 .modal-dialog .modal-body .part2 .form-group input:focus, .modal-dialog .modal-body .part2 .form-group textarea:focus{
-  border: 2px solid #E50028 !important;
+  border: 2px solid #005776 !important;
+
+}
+input:focus {
   outline: none;
 }
 

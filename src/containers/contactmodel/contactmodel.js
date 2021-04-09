@@ -77,7 +77,7 @@ class ContactModel extends Component {
                         </div>
                         <div className="part2">
                             <div className="forXs d-block d-sm-none">
-                                <span className="close-mark" data-dismiss="modal">&times;</span>
+                                <span className="close-mark" onClick={this.closeModal.bind(this)}>&times;</span>
                                 <span className="side-mark"></span><span className="getInTouch">GET IN TOUCH</span><br />
                                 <span className="line2">We would love to hear from you</span>
 

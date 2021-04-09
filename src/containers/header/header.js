@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './header.css';
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import ContactModel from "../contactmodel/contactmodel";
+import HamburgerIcon from '../../image_folder/Mobile/Hamburger.svg'
 
 class Header extends Component {
     constructor(props){
@@ -52,7 +53,7 @@ class Header extends Component {
                             <div className="col-6 logo-section">
                                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                                         data-target="#collapsibleNavbar">
-                                    <img src="image_folder/Mobile/Hamburger.svg" />
+                                    <img src={HamburgerIcon} />
                                 </button>
                                 &nbsp;&nbsp;
                             </div>
@@ -60,8 +61,7 @@ class Header extends Component {
                                  style={{paddingTop: '15px', textAlign: 'right'}}>
                                 <ul>
                                     <li style={{paddingTop: '5px', paddingRight: '10px'}}>
-                                        <a className="nav-link contact-cta Contact_Us" data-toggle="modal"
-                                           data-target="#myModal" href="index.html#lets-connect" style={{color: 'white'}}>
+                                        <a className="nav-link contact-cta Contact_Us" onClick={this.triggerContactModel.bind(this)} style={{color: 'white'}}>
                                             CONTACT US
                                         </a>
                                     </li>
