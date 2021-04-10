@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,Fragment} from 'react';
 import './header.css';
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import ContactModel from "../contactmodel/contactmodel";
@@ -30,7 +30,7 @@ function Header() {
   }
 
   return (
-    <div>
+    <Fragment>
       <div className="header-desktop d-none d-sm-block logo-header tab-active-scroll" id="logo-header">
         <div className="container">
           <div className="row">
@@ -95,7 +95,7 @@ function Header() {
           ) : null}
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 

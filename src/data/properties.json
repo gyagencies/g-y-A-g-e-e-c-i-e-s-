@@ -10,9 +10,48 @@
           "longitude": "15.787011",
           "latitude":"78.080915"
         },
-        "images": [],
+        "images": ["open_plots/plot1","open_plots/plot2"],
         "description": "",
-        "area-sizes": [],
+        "area-sizes": [1350],
+        "highlights": [],
+        "cost": "",
+        "address": ""
+      },
+      {
+        "title": "Open Plots for sale in Nandyal Road, Kurnool",
+        "geo-location": {
+          "longitude": "15.787011",
+          "latitude":"78.080915"
+        },
+        "images": ["open_plots/plot1","open_plots/plot2"],
+        "description": "",
+        "area-sizes": [1350],
+        "highlights": [],
+        "cost": "",
+        "address": ""
+      },
+      {
+        "title": "Open Plots for sale in Nandyal Road, Kurnool",
+        "geo-location": {
+          "longitude": "15.787011",
+          "latitude":"78.080915"
+        },
+        "images": ["open_plots/plot1","open_plots/plot2"],
+        "description": "",
+        "area-sizes": [1350],
+        "highlights": [],
+        "cost": "",
+        "address": ""
+      },
+      {
+        "title": "Open Plots for sale in Nandyal Road, Kurnool",
+        "geo-location": {
+          "longitude": "15.787011",
+          "latitude":"78.080915"
+        },
+        "images": ["open_plots/plot1","open_plots/plot2"],
+        "description": "",
+        "area-sizes": [1350],
         "highlights": [],
         "cost": "",
         "address": ""
