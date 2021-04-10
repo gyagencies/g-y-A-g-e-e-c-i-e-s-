@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Open Plots",
+    "id": 1,
+    "image": "open_plots/cover_img.jpeg",
+    "data": []
+  },
+  {
+    "title": "Individual Houses",
+    "id": 2,
+    "image": "open_plots/cover_img.jpeg",
+    "data": []
+  },
+  {
+    "title": "Apartment Houses",
+    "id": 3,
+    "image": "open_plots/cover_img.jpeg",
+    "data": []
+  }
+]
+
