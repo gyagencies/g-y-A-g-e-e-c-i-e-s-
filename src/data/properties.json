@@ -1,20 +1,33 @@
 [
   {
     "title": "Open Plots",
-    "id": 1,
-    "image": "open_plots/cover_img.jpeg",
-    "data": []
+    "id": "plots",
+    "image": "properties/open_plots.webp",
+    "data": [
+      {
+        "title": "Open Plots for sale in Nandikotkur Road, Kurnool",
+        "geo-location": {
+          "longitude": "15.787011",
+          "latitude":"78.080915"
+        },
+        "images": [],
+        "description": "",
+        "area-sizes": [],
+        "highlights": [],
+        "cost": ""
+      }
+    ]
   },
   {
     "title": "Individual Houses",
-    "id": 2,
-    "image": "open_plots/cover_img.jpeg",
+    "id": "individualhouses",
+    "image": "properties/houses.jpeg",
     "data": []
   },
   {
     "title": "Apartment Houses",
-    "id": 3,
-    "image": "open_plots/cover_img.jpeg",
+    "id": "apartments",
+    "image": "properties/apartments.jpeg",
     "data": []
   }
 ]
