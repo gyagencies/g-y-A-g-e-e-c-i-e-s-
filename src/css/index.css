@@ -770,14 +770,17 @@ li:hover{
 .property-tiles {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 500px);
   margin: 150px auto 50px auto;
 }
 .property-tile {
   width: 300px;
-  height: 200px;
   position: relative;
   cursor: pointer;
+
+}
+.property-tile .property-img{
+  width: 100%;
+  height: 200px;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -803,7 +806,7 @@ li:hover{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
