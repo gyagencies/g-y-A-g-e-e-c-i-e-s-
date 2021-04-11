@@ -770,12 +770,19 @@ li:hover{
 .property-tiles {
   display: flex;
   justify-content: space-between;
+  margin: 150px auto 50px auto;
 }
 .property-tile {
   width: 300px;
-  height: 200px;
   position: relative;
   cursor: pointer;
+
+}
+.property-tile .property-img{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
 }
 .property-tile:hover img{
   transform: scale(1.1);
@@ -785,7 +792,6 @@ li:hover{
   width: 100%;
   height: 100%;
   border: 1px solid #ddd;
-  border-radius: 4px;
   transition: 0.5s all ease-in-out;
 }
 .property-tile-title {
@@ -800,7 +806,7 @@ li:hover{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -824,5 +830,48 @@ li:hover{
 
 .property-tile:hover .property-view-more {
   opacity: 1;
+}
+
+.property-items {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 60px;
+  margin-bottom: 30px;
+}
+
+.property-item {
+  background-color: rgba(255,255,255,0);
+  border: 1px solid #ebeaea;
+  border-bottom-width: 3px;
+  width: 330px;
+}
+
+.property-item-img {
+  border-color: #ebeaea;
+}
+.property-item-img img {
+  width: 100%;
+}
+
+.property-item-title {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ebeaea;
+}
+
+.view-property {
+  cursor: pointer;
+  background: #005776;
+  text-align: center;
+  color: #fff;
+  font-family: 'ProximaNovaRegular';
+  padding: 10px;
+}
+
+.available-properties,.no-properties {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: 'ProximaNovaSemibold';
 }
 

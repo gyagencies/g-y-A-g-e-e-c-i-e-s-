@@ -8,9 +8,9 @@ import Routes from './Routes';
 import * as serviceWorker from './serviceWorker';
 
 const routes =  (
-          <BrowserRouter>
-                    <Routes />
-          </BrowserRouter>
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
 );
 
 
