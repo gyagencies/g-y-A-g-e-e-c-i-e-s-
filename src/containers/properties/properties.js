@@ -1,26 +1,15 @@
 import React,{useState} from 'react';
+import PropertyItem from '../properties/propertyItem';
 import propertiesData from '../../data/properties.json';
 
 function Properties () {
   const [propertyItems, setPropertyItems] = useState([]);
   const [propertyClickStatus, setPropertyClickStatus] = useState(false);
 
+  debugger;
   function loadProperties (items) {
-    const propertyItem = items.map((item, index) =>(
-      <div className="property-item" key={index}>
-        <div className="property-item-img">
-          <img src={`image_folder/projects/${item.images[0]}.jpeg`} alt={item.title}/>
-        </div>
-        <div className="property-item-title">
-          {item.title}
-        </div>
-        <div className="view-property">
-          View Property
-        </div>
-      </div>
-    ))
-    setPropertyItems(propertyItem)
     setPropertyClickStatus(true)
+    setPropertyItems(items)
   }
 
   const propertyTile = propertiesData.map((property) => (
@@ -38,25 +27,12 @@ function Properties () {
     ))
 
   return (
-      <div className='container'>
-        <div className="property-tiles">
-          {propertyTile}
-        </div>
-        <div className="property-available-status">
-          {
-            ! propertyItems.length >= 1 && propertyClickStatus ?
-              <div className="no-properties">
-                No properties found
-              </div> : propertyItems.length >= 1 && propertyClickStatus ?
-              <div className="available-properties">
-                Available Properties
-              </div> : null
-          }
-        </div>
-        <div className="property-items">
-          {propertyItems}
-        </div>
+    <div className='container'>
+      <div className="property-tiles">
+        {propertyTile}
       </div>
+      <PropertyItem propertyClickStatus={propertyClickStatus} items={propertyItems}/>
+    </div>
   )
 }
 
