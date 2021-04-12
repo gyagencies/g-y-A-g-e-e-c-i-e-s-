@@ -20,7 +20,7 @@ function PropertyItem (props) {
           props.items.map((item, index) =>(
             <div className="property-item" key={index}>
               <div className="property-item-img">
-                <img src={`image_folder/projects/${item.images[0]}.jpeg`} alt={item.title}/>
+                <img src={`image_folder/projects/${item.images[0]}`} alt={item.title}/>
               </div>
               <div className="property-item-title">
                 {item.title}

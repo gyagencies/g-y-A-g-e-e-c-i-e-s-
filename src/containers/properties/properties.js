@@ -6,7 +6,6 @@ function Properties () {
   const [propertyItems, setPropertyItems] = useState([]);
   const [propertyClickStatus, setPropertyClickStatus] = useState(false);
 
-  debugger;
   function loadProperties (items) {
     setPropertyClickStatus(true)
     setPropertyItems(items)

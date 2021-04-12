@@ -4,13 +4,23 @@
     "id": "plots",
     "image": "properties/open_plots.webp",
     "data": [
+    ]
+  },
+  {
+    "title": "Individual Houses",
+    "id": "individualhouses",
+    "image": "properties/houses.jpeg",
+    "data": [
       {
-        "title": "Open Plots for sale in Nandikotkur Road, Kurnool",
+        "title": "Individual houses and duplex for sale in Sudi Reddy Palle Road, Kunool",
         "geo-location": {
-          "longitude": "15.787011",
-          "latitude":"78.080915"
+          "latitude":"15.787476",
+          "longitude": "78.083887"
         },
-        "images": ["open_plots/plot1","open_plots/plot2"],
+        "images": [
+          "houses/drc/sriharitownship/sriharitownship_1.jpg",
+          "houses/drc/sriharitownship/sriharitownship_2.jpg"
+        ],
         "description": "",
         "area-sizes": [1350],
         "highlights": [],
@@ -18,38 +28,20 @@
         "address": ""
       },
       {
-        "title": "Open Plots for sale in Nandyal Road, Kurnool",
+        "title": "Individual houses and duplex for sale in Nandikotkur Road near City Forest",
         "geo-location": {
-          "longitude": "15.787011",
-          "latitude":"78.080915"
+          "latitude":"15.787476",
+          "longitude": "78.083887"
         },
-        "images": ["open_plots/plot1","open_plots/plot2"],
-        "description": "",
-        "area-sizes": [1350],
-        "highlights": [],
-        "cost": "",
-        "address": ""
-      },
-      {
-        "title": "Open Plots for sale in Nandyal Road, Kurnool",
-        "geo-location": {
-          "longitude": "15.787011",
-          "latitude":"78.080915"
-        },
-        "images": ["open_plots/plot1","open_plots/plot2"],
-        "description": "",
-        "area-sizes": [1350],
-        "highlights": [],
-        "cost": "",
-        "address": ""
-      },
-      {
-        "title": "Open Plots for sale in Nandyal Road, Kurnool",
-        "geo-location": {
-          "longitude": "15.787011",
-          "latitude":"78.080915"
-        },
-        "images": ["open_plots/plot1","open_plots/plot2"],
+        "images": [
+          "houses/drc/oxyzencity/oxyzencity_7.jpg",
+          "houses/drc/oxyzencity/oxyzencity_1.jpg",
+          "houses/drc/oxyzencity/oxyzencity_3.jpg",
+          "houses/drc/oxyzencity/oxyzencity_4.jpg",
+          "houses/drc/oxyzencity/oxyzencity_5.jpg",
+          "houses/drc/oxyzencity/oxyzencity_6.jpg",
+          "houses/drc/oxyzencity/oxyzencity_1.jpg"
+        ],
         "description": "",
         "area-sizes": [1350],
         "highlights": [],
@@ -57,12 +49,6 @@
         "address": ""
       }
     ]
-  },
-  {
-    "title": "Individual Houses",
-    "id": "individualhouses",
-    "image": "properties/houses.jpeg",
-    "data": []
   },
   {
     "title": "Apartment Houses",
