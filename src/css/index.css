@@ -859,6 +859,7 @@ li:hover{
 .property-item-img img {
   width: 100%;
   height: 100%;
+  transition: 0.5s all ease-in-out;
 }
 
 .property-item-title {
@@ -874,6 +875,14 @@ li:hover{
   color: #fff;
   font-family: 'ProximaNovaRegular';
   padding: 10px;
+}
+.view-property a{
+  color: #fff;
+  display: block;
+}
+
+.view-property a:hover{
+  color: #fff;
 }
 
 .available-properties,.no-properties {

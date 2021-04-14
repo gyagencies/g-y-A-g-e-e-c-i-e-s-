@@ -1,6 +1,7 @@
 import React,{Fragment} from 'react';
+import {NavLink} from 'react-router-dom';
 
-function PropertyItem (props) {
+function PropertyData (props) {
 
   return (
     <Fragment>
@@ -26,7 +27,7 @@ function PropertyItem (props) {
                 {item.title}
               </div>
               <div className="view-property">
-                View Property
+                      <NavLink to={`/property-detail/${props.category}/${index}`}> View Property</NavLink>
               </div>
             </div>
           ))
@@ -36,4 +37,4 @@ function PropertyItem (props) {
   )
 }
 
-export default PropertyItem;
+export default PropertyData;

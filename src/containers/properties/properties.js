@@ -1,13 +1,15 @@
 import React,{useState} from 'react';
-import PropertyItem from '../properties/propertyItem';
+import PropertyData from './PropertyData';
 import propertiesData from '../../data/properties.json';
 
 function Properties () {
   const [propertyItems, setPropertyItems] = useState([]);
+  const [category, setCategory] = useState(null);
   const [propertyClickStatus, setPropertyClickStatus] = useState(false);
 
-  function loadProperties (items) {
-    setPropertyClickStatus(true)
+  function loadProperties (items, category) {
+    setPropertyClickStatus(true);
+    setCategory(category);
     setPropertyItems(items)
   }
 
@@ -18,7 +20,7 @@ function Properties () {
         </div>
           <div className="property-tile-title">{property.title}</div>
           <div className="property-view-more">
-            <div className="view-more-btn" onClick={() => loadProperties(property.data)}>
+            <div className="view-more-btn" onClick={() => loadProperties(property.data, property.id)}>
               View More
             </div>
           </div>
@@ -30,7 +32,7 @@ function Properties () {
       <div className="property-tiles">
         {propertyTile}
       </div>
-      <PropertyItem propertyClickStatus={propertyClickStatus} items={propertyItems}/>
+      <PropertyData category={category} propertyClickStatus={propertyClickStatus} items={propertyItems}/>
     </div>
   )
 }
