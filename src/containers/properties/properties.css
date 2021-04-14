@@ -1,0 +1,18 @@
+.slick-slide div{
+    width: 800px;
+    height: 540px;
+}
+.slick-slide div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #005776;
+}
+.property_detail{
+    width: 860px;
+    margin: auto;
+    padding: 20px 30px;
+}
