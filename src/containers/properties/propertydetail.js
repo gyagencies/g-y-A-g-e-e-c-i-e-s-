@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./properties.css";
+import TextComponent from "../../components/ui/textcomponent";
 
 const PropertyDetail = (props) => {
     const path = props.location.pathname.split('/');
@@ -30,13 +31,16 @@ const PropertyDetail = (props) => {
         <Fragment>
             <div className='container' style={{ marginTop: '110px'}}>
                 <div className='property_detail'>
-                    <Slider {...settings}>
-                        {propertyImages.map(img => {
-                            return (
-                                <img src={img} />
-                            )
-                        })}
-                    </Slider>
+                    <TextComponent className={'property-title'} text={property.title}/>
+                    <div className='slider'>
+                        <Slider {...settings}>
+                            {propertyImages.map(img => {
+                                return (
+                                    <img src={img} />
+                                )
+                            })}
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </Fragment>
