@@ -27,7 +27,7 @@ function PropertyData (props) {
                 {item.title}
               </div>
               <div className="view-property">
-                      <NavLink to={`/property-detail/${props.category}/${index}`}> View Property</NavLink>
+                <NavLink to={`/property-detail/${props.category}/${index}`}> View Property</NavLink>
               </div>
             </div>
           ))
