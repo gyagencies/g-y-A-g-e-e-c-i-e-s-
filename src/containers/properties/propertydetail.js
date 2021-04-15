@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./properties.css";
 import TextComponent from "../../components/ui/textcomponent";
+import ListComponent from "../../components/ui/listcomponent";
+import MapComponent from "../../components/ui/mapcomponent";
 
 const PropertyDetail = (props) => {
     const path = props.location.pathname.split('/');
@@ -40,6 +42,16 @@ const PropertyDetail = (props) => {
                                 )
                             })}
                         </Slider>
+                    </div>
+                        <TextComponent className={'property-description'} text={property.description}/>
+                        <div className='more_detailing'>
+                            <ListComponent className='highlights' list={property.highlights} />
+                            <ListComponent className='area-sizes' list={property.area-sizes} />
+                            <TextComponent className='address' text={property.address}/>
+                            <TextComponent className='cost' text={property.cost}/>
+                        </div>
+                    <div className='geo_location'>
+                        <MapComponent />
                     </div>
                 </div>
             </div>
