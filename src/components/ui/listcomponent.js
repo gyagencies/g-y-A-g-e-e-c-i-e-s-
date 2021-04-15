@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 
 const ListComponent = (props) => {
+    console.log(props)
     return(
         <Fragment>
-            <ul className={props.className}>
-                {props.list.map((item) => {
-                    return (<li>{item}</li>)
-                 })}
+            <ul className={props.cssClass}>
+                {props.list.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
             </ul>
         </Fragment>
     )

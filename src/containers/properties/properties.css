@@ -2,9 +2,11 @@
     font-size: 24px;
     font-weight: bold;
     padding: 10px 0;
+    color: #005776;
+    font-family: 'ProximaNovaSemibold';
 }
 .slider{
-    width: 860px;
+    width: 850px;
     margin: auto;
 }
 .slick-slide div{
@@ -22,5 +24,31 @@
 }
 .property_detail{
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 0px;
+}
+.slick-slider {
+    text-align: -webkit-center;
+}
+.map-frame {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+.project-location-heading {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #005776;
+    font-family: 'ProximaNovaSemibold';
+}
+
+.geo_location {
+    margin: 20px 0px;
+}
+.property-details {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #005776;
+    font-family: 'ProximaNovaSemibold';
 }

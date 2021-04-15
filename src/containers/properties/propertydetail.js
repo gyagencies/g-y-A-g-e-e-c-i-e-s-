@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, {Fragment, useEffect} from 'react';
 import propertyData from '../../data/properties.json'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -9,6 +9,10 @@ import ListComponent from "../../components/ui/listcomponent";
 import MapComponent from "../../components/ui/mapcomponent";
 
 const PropertyDetail = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const path = props.location.pathname.split('/');
     const category = path[path.length - 2];
     const index = path[path.length - 1];
@@ -22,6 +26,7 @@ const PropertyDetail = (props) => {
      let propertyImages = property.images.map(item => {
          return `${window.location.protocol}//${window.location.host}/image_folder/projects/${item}`
     });
+
     const settings = {
         infinite: true,
         speed: 500,
@@ -36,9 +41,9 @@ const PropertyDetail = (props) => {
                     <TextComponent className={'property-title'} text={property.title}/>
                     <div className='slider'>
                         <Slider {...settings}>
-                            {propertyImages.map(img => {
+                            {propertyImages.map((img, index) => {
                                 return (
-                                    <img src={img} />
+                                    <img src={img} key={index}/>
                                 )
                             })}
                         </Slider>
@@ -46,13 +51,13 @@ const PropertyDetail = (props) => {
                         <TextComponent className={'property-description'} text={property.description}/>
                         <div className='more_detailing'>
                             <ListComponent className='highlights' list={property.highlights} />
-                            <ListComponent className='area-sizes' list={property.areasizes} />
+                            <ListComponent className='area-sizes' list={property.area_sizes} />
                             <TextComponent className='address' text={property.address}/>
                             <TextComponent className='cost' text={property.cost}/>
                         </div>
                     <TextComponent className={'legal-text'} text={'Legal opinion will be available, Please Contact us to get'}/>
                     <div className='geo_location'>
-                        <MapComponent />
+                        <MapComponent geoLocation={property['geo_location']}/>
                     </div>
                 </div>
             </div>

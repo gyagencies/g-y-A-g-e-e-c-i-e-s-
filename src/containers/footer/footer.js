@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer" id="footer-section">
       <div className="container gy-footer">
         <div className="sub-footer-list">
-          <NavigationItem link='/about'>ABOUT GY</NavigationItem>&nbsp; | <NavigationItem link="/properties"> PROPERTIES</NavigationItem>
+          <NavigationItem link='/about'>ABOUT GY</NavigationItem>&nbsp; | &nbsp; <NavigationItem link="/properties"> PROPERTIES</NavigationItem>
         </div>
         <div className="copyright">
           © GY Agencies 2021
