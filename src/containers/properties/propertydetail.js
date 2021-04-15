@@ -46,10 +46,11 @@ const PropertyDetail = (props) => {
                         <TextComponent className={'property-description'} text={property.description}/>
                         <div className='more_detailing'>
                             <ListComponent className='highlights' list={property.highlights} />
-                            <ListComponent className='area-sizes' list={property.area-sizes} />
+                            <ListComponent className='area-sizes' list={property.areasizes} />
                             <TextComponent className='address' text={property.address}/>
                             <TextComponent className='cost' text={property.cost}/>
                         </div>
+                    <TextComponent className={'legal-text'} text={'Legal opinion will be available, Please Contact us to get'}/>
                     <div className='geo_location'>
                         <MapComponent />
                     </div>
