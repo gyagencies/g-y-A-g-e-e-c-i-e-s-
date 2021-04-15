@@ -71,7 +71,7 @@ function Header() {
               &nbsp;&nbsp;
             </div>
             <div className="col-6 justify-content-end"
-                 style={{paddingTop: '15px', textAlign: 'right'}}>
+                 style={{paddingTop: '15px', textAlign: '-webkit-right'}}>
               <ul>
                 <li className="nav-item">
                   <a className="nav-link contact-cta Contact_Us" onClick={triggerContactModel}
