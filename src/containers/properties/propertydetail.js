@@ -29,9 +29,11 @@ const PropertyDetail = (props) => {
 
     const settings = {
         infinite: true,
+        slidesToScroll: 1,
+        autoplay: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        autoplaySpeed: 2000,
+        cssEase: "linear"
     };
 
     return(
