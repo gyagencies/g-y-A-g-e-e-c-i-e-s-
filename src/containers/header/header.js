@@ -2,9 +2,11 @@ import React, {useState,Fragment} from 'react';
 import './header.css';
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import ContactModel from "../contactmodel/contactmodel";
-import HamburgerIcon from '../../image_folder/Mobile/Hamburger.svg'
+import HamburgerIcon from '../../image_folder/Mobile/Hamburger.svg';
+import $ from 'jquery';
 
 function Header() {
+
   const headerModelNavState = {
     openContactModel: false,
     showMobileNavbar: false
@@ -36,7 +38,7 @@ function Header() {
           <div className="row">
             <div className="col-sm-3 d-flex">
               <div className="afs-sticker-logo align-self-center">
-                <NavigationItem link='/' exact>
+                <NavigationItem link='/' exact targetId="#section1" navigateToView={true}>
                   <div className='home_logo'/>
                 </NavigationItem>
               </div>
@@ -44,10 +46,16 @@ function Header() {
             <div className="col-sm-9 logo-section">
               <div className="d-none d-sm-block desk-nav">
                 <ul className="nav justify-content-end">
-                  <NavigationItem link='/'>HOME</NavigationItem>
-                  <NavigationItem link='/'>ABOUT US</NavigationItem>
-                  <NavigationItem link='/'>OUR SERVICES</NavigationItem>
-                  <NavigationItem link='/properties'>PROPERTIES</NavigationItem>
+                  <NavigationItem link='/' targetId="#section1" navigateToView={true}>
+                    HOME
+                  </NavigationItem>
+                  <NavigationItem link='/' targetId="#section-2" navigateToView={true}>
+                    ABOUT US
+                  </NavigationItem>
+                  <NavigationItem link='/' targetId="#section-3" navigateToView={true}>
+                    OUR SERVICES
+                  </NavigationItem>
+                  <NavigationItem link='/properties' navigateToView={false}>PROPERTIES</NavigationItem>
                   <li className="nav-item">
                     <a className="nav-link contact-cta Contact_Us" onClick={triggerContactModel}
                        data-toggle="modal" data-target="#myModal"
@@ -86,10 +94,10 @@ function Header() {
             <div className="row  navbar-collapse" id="collapsibleNavbar"
                  style={{backgroundColor: '#000'}}>
               <ul className="navbar-nav">
-                <NavigationItem link='/'>HOME</NavigationItem>
-                <NavigationItem link='/'>ABOUT US</NavigationItem>
-                <NavigationItem link='/'>OUR SERVICES</NavigationItem>
-                <NavigationItem link='/properties'>PROPERTIES</NavigationItem>
+                <NavigationItem link='/' targetId="#section1" navigateToView={true}>HOME</NavigationItem>
+                <NavigationItem link='/' targetId="#section-2" navigateToView={true}>ABOUT US</NavigationItem>
+                <NavigationItem link='/' targetId="#section-3" navigateToView={true}>OUR SERVICES</NavigationItem>
+                <NavigationItem link='/properties' navigateToView={false}>PROPERTIES</NavigationItem>
               </ul>
             </div>
           ) : null}

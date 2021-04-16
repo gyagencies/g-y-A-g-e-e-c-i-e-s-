@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import PropertyData from './PropertyData';
 import propertiesData from '../../data/properties.json';
+import $ from 'jquery';
 
 function Properties () {
   const [propertyItems, setPropertyItems] = useState([]);
@@ -11,6 +12,9 @@ function Properties () {
     setPropertyClickStatus(true);
     setCategory(category);
     setPropertyItems(items)
+    $('html, body').animate({
+      scrollTop: $("#property-available-status").offset().top - 60
+    }, 500);
   }
 
   const propertyTile = propertiesData.map((property) => (
@@ -27,9 +31,10 @@ function Properties () {
       </div>
     ))
 
+
   return (
     <div className='container'>
-      <div className="property-tiles">
+      <div className="property-tiles" id="property-tiles">
         {propertyTile}
       </div>
       <PropertyData category={category} propertyClickStatus={propertyClickStatus} items={propertyItems}/>

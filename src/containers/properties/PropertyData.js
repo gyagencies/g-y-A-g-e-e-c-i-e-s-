@@ -6,7 +6,7 @@ function PropertyData (props) {
 
   return (
     <Fragment>
-      <div className="property-available-status">
+      <div className="property-available-status" id="property-available-status">
         {
           ! props.items.length >= 1 && props.propertyClickStatus ?
             <div className="no-properties">
