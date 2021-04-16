@@ -70,9 +70,20 @@
     font-family: proximaNovaRegular;
 }
 
-.more_detailing ul{
-    list-style-image: url("../../image_folder/check.png");
-    list-style-position: inside;
+.more_detailing ul li{
+    list-style: none;
+    /*list-style-image: url("../../image_folder/check.png");*/
+    /*list-style-position: inside;*/
+}
+.more_detailing ul li::before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: 15px;
+    background-image: url("../../image_folder/check.png");
+    background-repeat: no-repeat;
+    margin-right: 10px;
 }
 .more_detailing ul li {
     font-size: 22px;
