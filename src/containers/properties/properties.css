@@ -233,3 +233,21 @@
 .imp-section .cost{
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 480px){
+    .property-tiles {
+        display: grid;
+        margin: 115px auto 10px auto;
+    }
+    .property-tile {
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 30px;
+    }
+    .property-tile-title {
+        font-size: 20px;
+    }
+    .property-item {
+        width: 100%;
+    }
+}
