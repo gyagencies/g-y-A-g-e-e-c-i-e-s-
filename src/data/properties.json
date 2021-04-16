@@ -13,26 +13,20 @@
     "data": [
       {
         "title": "Individual houses and duplex for sale in Sudi Reddy Palle Road, Kunool",
-        "geo-location": {
-          "latitude":"15.787476",
-          "longitude": "78.083887"
-        },
+        "geo_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009.3637731177614!2d78.08323578449298!3d15.78739535590374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQ3JzE0LjYiTiA3OMKwMDUnMDEuNyJF!5e0!3m2!1sen!2sin!4v1618505976654!5m2!1sen!2sin",
         "images": [
           "houses/drc/sriharitownship/sriharitownship_1.jpg",
           "houses/drc/sriharitownship/sriharitownship_2.jpg"
         ],
         "description": "",
-        "area-sizes": [1350],
+        "area_sizes": ["30 * 50"],
         "highlights": [],
         "cost": "",
         "address": ""
       },
       {
         "title": "Individual houses and duplex for sale in Nandikotkur Road near City Forest",
-        "geo-location": {
-          "latitude":"15.787476",
-          "longitude": "78.083887"
-        },
+        "geo_location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.090170061124!2d78.10978482918551!3d15.786920289834617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQ3JzEyLjkiTiA3OMKwMDYnMzcuMiJF!5e1!3m2!1sen!2sin!4v1618506117297!5m2!1sen!2sin",
         "images": [
           "houses/drc/oxyzencity/oxyzencity_7.jpg",
           "houses/drc/oxyzencity/oxyzencity_1.jpg",
@@ -42,11 +36,11 @@
           "houses/drc/oxyzencity/oxyzencity_6.jpg",
           "houses/drc/oxyzencity/oxyzencity_1.jpg"
         ],
-        "description": "",
-        "area-sizes": [1350],
-        "highlights": [],
-        "cost": "",
-        "address": ""
+        "description": "venture details venture details venture details venture details venture details venture details venture details venture details venture details venture details",
+        "area_sizes": ["30 * 50", "30 * 50", "30 * 50", "30 * 50"],
+        "highlights": ["venture details", "venture details", "venture details", "venture details", "venture details", "venture details"],
+        "cost": "100000000/-",
+        "address": "venture details, venture details, venture details, venture details"
       }
     ]
   },
