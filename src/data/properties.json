@@ -36,11 +36,11 @@
           "houses/drc/oxyzencity/oxyzencity_6.jpg",
           "houses/drc/oxyzencity/oxyzencity_1.jpg"
         ],
-        "description": "",
-        "area_sizes": ["30 * 50"],
-        "highlights": [],
-        "cost": "",
-        "address": ""
+        "description": "venture details venture details venture details venture details venture details venture details venture details venture details venture details venture details",
+        "area_sizes": ["30 * 50", "30 * 50", "30 * 50", "30 * 50"],
+        "highlights": ["venture details", "venture details", "venture details", "venture details", "venture details", "venture details"],
+        "cost": "100000000/-",
+        "address": "venture details, venture details, venture details, venture details"
       }
     ]
   },

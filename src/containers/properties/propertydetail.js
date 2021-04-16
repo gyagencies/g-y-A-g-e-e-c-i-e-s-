@@ -50,14 +50,31 @@ const PropertyDetail = (props) => {
                             })}
                         </Slider>
                     </div>
-                        <TextComponent className={'property-description'} text={property.description}/>
-                        <div className='more_detailing'>
-                            <ListComponent className='highlights' list={property.highlights} />
-                            <ListComponent className='area-sizes' list={property.area_sizes} />
-                            <TextComponent className='address' text={property.address}/>
-                            <TextComponent className='cost' text={property.cost}/>
+                        <div className='description'>
+                            <h3>Description</h3>
+                            <TextComponent className={'property-description'} text={property.description}/>
                         </div>
-                    <TextComponent className={'legal-text'} text={'Legal opinion will be available, Please Contact us to get'}/>
+                        <div className='more_detailing'>
+                            <div>
+                                <h4>Property Highlights</h4>
+                                <ListComponent className='highlights' list={property.highlights} />
+                            </div>
+                            <div>
+                                <h4>Available Area Sizes</h4>
+                                <ListComponent className='area-sizes' list={property.area_sizes} />
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <TextComponent className='address' text={property.address}/>
+                            </div>
+                            <div>
+                                <h4>Approximate Cost</h4>
+                                <TextComponent className='cost' text={property.cost}/>
+                            </div>
+                        </div>
+                    <marquee>
+                        <TextComponent className={'legal-text'} text={'Legal opinion will be available, Please Contact us to get'}/>
+                    </marquee>
                     <div className='geo_location'>
                         <MapComponent geoLocation={property['geo_location']}/>
                     </div>
