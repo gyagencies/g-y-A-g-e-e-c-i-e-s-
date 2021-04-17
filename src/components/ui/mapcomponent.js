@@ -8,7 +8,6 @@ const MapComponent = (props) => {
       </div>
       <iframe
         src={props['geoLocation']}
-        allowfullscreen
         loading="lazy"
         className="map-frame" />
     </Fragment>

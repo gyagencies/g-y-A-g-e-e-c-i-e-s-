@@ -3,7 +3,6 @@ import './header.css';
 import NavigationItem from "../../components/Navigation/NavigationItem";
 import ContactModel from "../contactmodel/contactmodel";
 import HamburgerIcon from '../../image_folder/Mobile/Hamburger.svg';
-import $ from 'jquery';
 
 function Header() {
 
@@ -94,10 +93,10 @@ function Header() {
             <div className="row  navbar-collapse" id="collapsibleNavbar"
                  style={{backgroundColor: '#000'}}>
               <ul className="navbar-nav">
-                <NavigationItem link='/' targetId="#section1" navigateToView={true}>HOME</NavigationItem>
-                <NavigationItem link='/' targetId="#section-2" navigateToView={true}>ABOUT US</NavigationItem>
-                <NavigationItem link='/' targetId="#section-3" navigateToView={true}>OUR SERVICES</NavigationItem>
-                <NavigationItem link='/properties' navigateToView={false}>PROPERTIES</NavigationItem>
+                <NavigationItem link='/' targetId="#section1" navigateToView={true} triggerNav={triggerNavbar}>HOME</NavigationItem>
+                <NavigationItem link='/' targetId="#section-2" navigateToView={true} triggerNav={triggerNavbar}>ABOUT US</NavigationItem>
+                <NavigationItem link='/' targetId="#section-3" navigateToView={true} triggerNav={triggerNavbar}>OUR SERVICES</NavigationItem>
+                <NavigationItem link='/properties' navigateToView={false} triggerNav={triggerNavbar}>PROPERTIES</NavigationItem>
               </ul>
             </div>
           ) : null}

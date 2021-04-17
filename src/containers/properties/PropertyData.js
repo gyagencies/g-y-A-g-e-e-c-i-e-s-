@@ -1,8 +1,11 @@
-import React,{Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import TextComponent from "../../components/ui/textcomponent";
 
 function PropertyData (props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <Fragment>

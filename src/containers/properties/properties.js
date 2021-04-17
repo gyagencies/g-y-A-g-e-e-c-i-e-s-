@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import PropertyData from './PropertyData';
 import propertiesData from '../../data/properties.json';
 import $ from 'jquery';
@@ -8,12 +8,16 @@ function Properties () {
   const [category, setCategory] = useState(null);
   const [propertyClickStatus, setPropertyClickStatus] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   function loadProperties (items, category) {
     setPropertyClickStatus(true);
     setCategory(category);
     setPropertyItems(items)
     $('html, body').animate({
-      scrollTop: $("#property-available-status").offset().top - 60
+      scrollTop: $("#property-available-status").offset().top - 80
     }, 500);
   }
 

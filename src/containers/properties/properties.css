@@ -250,4 +250,41 @@
     .property-item {
         width: 100%;
     }
+    .slider{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .img-and-imp-section {
+        display: block;
+    }
+    .slick-slide div img {
+        height: auto;
+    }
+    .slick-prev {
+        left: 5px;
+        z-index: 9;
+        background: black;
+        border-radius: 10px;
+        padding-top: 1px;
+    }
+    .slick-next {
+        right: 5px;
+        z-index: 9;
+        background: black;
+        border-radius: 10px;
+        padding-top: 1px;
+    }
+    .slick-prev:before, .slick-next:before {
+        z-index: 9;
+        background: black;
+        border-radius: 10px;
+        padding-top: 1px;
+    }
+    .property_detail {
+        padding: 0;
+    }
+    .more_detailing {
+        display: block;
+        padding: 20px 0;
+    }
 }

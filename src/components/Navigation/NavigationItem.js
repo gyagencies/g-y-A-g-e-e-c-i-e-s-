@@ -5,14 +5,14 @@ import $ from "jquery";
 
 function NavigationItem (props) {
   function scrollToView (id, navigate) {
-    debugger;
     setTimeout(() => {
       if (id && navigate) {
         $('html, body').animate({
-          scrollTop: $(id).offset().top
+          scrollTop: $(id).offset().top - 65
         }, 500);
       }
     })
+    props.triggerNav();
   }
   return (
     <li className="NavigationItem" onClick={() => scrollToView(props['targetId'], props.navigateToView)}>
