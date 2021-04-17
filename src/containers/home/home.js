@@ -56,7 +56,7 @@ function Home() {
                 for property online.
               </div>
               <div className="learn-more">
-                <NavigationItem link="/about">
+                <NavigationItem link="/about" navigateToView={false}>
                   <button className="afs-button">
                     LEARN MORE
                   </button>

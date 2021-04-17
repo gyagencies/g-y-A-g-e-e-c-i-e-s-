@@ -41,14 +41,22 @@ const PropertyDetail = (props) => {
             <div className='container' style={{ marginTop: '110px'}}>
                 <div className='property_detail'>
                     <TextComponent className={'property-title'} text={property.title}/>
-                    <div className='slider'>
-                        <Slider {...settings}>
-                            {propertyImages.map((img, index) => {
-                                return (
-                                    <img src={img} key={index}/>
-                                )
-                            })}
-                        </Slider>
+                    <div className='img-and-imp-section'>
+                        <div className='slider'>
+                            <Slider {...settings}>
+                                {propertyImages.map((img, index) => {
+                                    return (
+                                        <img src={img} key={index}/>
+                                    )
+                                })}
+                            </Slider>
+                        </div>
+                        <div>
+                            <div className='imp-section'>
+                                <TextComponent className='cost' text={`Approximate Cost: ${property.cost}`}/>
+                                <TextComponent className='ready-available' text={`Ready to Occupy: ${property.ready_to_occupy ? 'Yes' : 'No'}`}/>
+                            </div>
+                        </div>
                     </div>
                         <div className='description'>
                             <h3>Description</h3>
@@ -56,24 +64,20 @@ const PropertyDetail = (props) => {
                         </div>
                         <div className='more_detailing'>
                             <div>
-                                <h4>Property Highlights</h4>
+                                <h4>Highlights</h4>
                                 <ListComponent className='highlights' list={property.highlights} />
                             </div>
                             <div>
                                 <h4>Available Area Sizes</h4>
                                 <ListComponent className='area-sizes' list={property.area_sizes} />
                             </div>
-                            <div>
+                            <div className='address_section'>
                                 <h4>Address</h4>
                                 <TextComponent className='address' text={property.address}/>
                             </div>
-                            <div>
-                                <h4>Approximate Cost</h4>
-                                <TextComponent className='cost' text={property.cost}/>
-                            </div>
                         </div>
                     <marquee>
-                        <TextComponent className={'legal-text'} text={'Legal opinion will be available, Please Contact us to get'}/>
+                        <TextComponent className={'legal-text'} text={'Legal Documents will be available, Please Contact us to get'}/>
                     </marquee>
                     <div className='geo_location'>
                         <MapComponent geoLocation={property['geo_location']}/>

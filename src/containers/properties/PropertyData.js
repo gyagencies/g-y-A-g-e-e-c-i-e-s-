@@ -1,11 +1,12 @@
 import React,{Fragment} from 'react';
 import {NavLink} from 'react-router-dom';
+import TextComponent from "../../components/ui/textcomponent";
 
 function PropertyData (props) {
 
   return (
     <Fragment>
-      <div className="property-available-status">
+      <div className="property-available-status" id="property-available-status">
         {
           ! props.items.length >= 1 && props.propertyClickStatus ?
             <div className="no-properties">
@@ -21,6 +22,7 @@ function PropertyData (props) {
           props.items.map((item, index) =>(
             <div className="property-item" key={index}>
               <div className="property-item-img">
+                  {item.ready_to_occupy ? <TextComponent className='label_ready_to_occupy' text='Ready to occupy' /> : null}
                 <img src={`image_folder/projects/${item.images[0]}`} alt={item.title}/>
               </div>
               <div className="property-item-title">
