@@ -12,7 +12,10 @@ function NavigationItem (props) {
         }, 500);
       }
     })
-    props.triggerNav();
+    debugger;
+    if (props.triggerNav) {
+      props.triggerNav();
+    }
   }
   return (
     <li className="NavigationItem" onClick={() => scrollToView(props['targetId'], props.navigateToView)}>
